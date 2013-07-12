@@ -88,6 +88,7 @@ if(require.main == module) {
         .parse(process.argv);
 
     console.log("This is HTML file: " + program.file);
+    console.log("This is the URL: " + program.url);
 
     if (program.url) {
       restler.get(program.url).on('complete', function(result) {
